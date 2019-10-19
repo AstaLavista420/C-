@@ -1,0 +1,6 @@
+int DBD(int a, int b){
+    return b==0?a : DBD(b,a%b);
+}
+int MBK(int a, int b){
+    return a*b/DBD(a,b);
+}
